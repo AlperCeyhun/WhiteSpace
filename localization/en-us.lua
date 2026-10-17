@@ -9,13 +9,13 @@ return {
                     'after each played hand'
                 }
             },
-            j_aws_cofee = {
-                name = 'Coffee',
-                text = {
-                    '{C:green}1 in 2{} chance to',
-                    'retrigger each played card'
+                j_aws_caffeine = {
+                    name = 'Caffeine',
+                    text = {
+                        '{C:green}#1# in #2#{} chance to',
+                        'retrigger each played card'
+                    }
                 }
-            }
         }
     }
 }

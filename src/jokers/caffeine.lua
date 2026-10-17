@@ -1,8 +1,8 @@
 SMODS.Joker({
-    key = 'coffee',
-    atlas = 'placeholders',
+    key = 'caffeine',
+    atlas = 'aws_caffeine',
     pos = {
-        x = 1,
+        x = 0,
         y = 0
     },
 
@@ -13,12 +13,25 @@ SMODS.Joker({
     },
 
     loc_txt = {
-        name = 'Coffee',
+        name = 'Caffeine',
         text = {
-            '{C:green}1 in 2{} chance to',
+            '{C:green}#1# in #2#{} chance to',
             'retrigger each played card'
         }
     },
+
+    loc_vars = function(self, info_queue, card)
+        return {
+            vars = {
+                SMODS.get_probability_vars(
+                    card,
+                    1,
+                    card.ability.extra.odds,
+                    'aws_caffeine'
+                )
+            }
+        }
+    end,
 
     rarity = 2,
     cost = 5,
@@ -28,7 +41,7 @@ SMODS.Joker({
             and context.cardarea == G.play
             and not context.retrigger_joker then
 
-            if pseudorandom('aws_coffee') < G.GAME.probabilities.normal / card.ability.extra.odds then
+            if pseudorandom('aws_caffeine') < G.GAME.probabilities.normal / card.ability.extra.odds then
                 return {
                     repetitions = 1,
                     card = card
