@@ -24,11 +24,9 @@ Use versions compatible with your installed Balatro version and follow the offic
 ## Installation
 
 1. Install Lovely Injector and Steamodded.
-2. Download the latest release of Aubrey's White Space, or clone this repository for development.
+2. Download the latest release of Aubrey's White Space from code>download as zip.
 3. Place the mod folder in `%AppData%/Balatro/Mods/`.
 4. Launch Balatro and check the Mods menu to confirm it loaded.
-
-For development, the repository folder should contain the mod metadata file and `main.lua` at its root.
 
 ## Configuration
 
@@ -36,7 +34,7 @@ Configuration options will be documented here as they are added.
 
 ## Compatibility
 
-Compatibility with other mods has not yet been fully tested. Please report any issues with details about your Balatro version, Steamodded version, and other enabled mods.
+Compatibility with other mods has not yet been tested. Please report any issues with details about your Balatro version, Steamodded version, and other enabled mods.
 
 ## Development Status
 
