@@ -8,6 +8,13 @@ return {
                     'Loses {C:chips}5{} Chips and {C:mult}1{} Mult',
                     'after each played hand'
                 }
+            },
+            j_aws_cofee = {
+                name = 'Coffee',
+                text = {
+                    '{C:green}1 in 2{} chance to',
+                    'retrigger each played card'
+                }
             }
         }
     }
