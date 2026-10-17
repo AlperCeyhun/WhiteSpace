@@ -47,7 +47,3 @@ This mod is being built as a personal project. Content, balance, and features ma
 Created by **Aubrey**.
 
 Thanks to the Balatro and Steamodded modding communities for their tools and documentation.
-
-## License
-
-A license has not yet been selected. Please contact the author before redistributing or reusing original assets.
