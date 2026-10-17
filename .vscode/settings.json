@@ -1,0 +1,10 @@
+{
+    "Lua.diagnostics.globals": [
+        "SMODS",
+        "Game",
+        "G",
+        "Card",
+        "Blind",
+        "ease_dollars"
+    ]
+}
