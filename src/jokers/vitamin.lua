@@ -1,32 +1,32 @@
+
 SMODS.Joker({
-    key = 'vitamin',
-    atlas = 'placeholders',
+    key = 'vitamins',
+    atlas = 'aws_vitamins',
     pos = {
-        x = 1,
+        x = 0,
         y = 0
     },
 
     config = {
         extra = {
-            chips = 0,
-            mult = 0,
+            chips = 100,
+            mult = 20,
             chip_mod = 5,
-            mult_mod = 1
+            mult_mod = 1,
+            consumed = false
         }
     },
 
     loc_txt = {
-        name = 'Vitamin',
+        name = 'Vitamins',
         text = {
-            'Gains {C:chips}+5{} Chips and',
-            '{C:mult}+1{} Mult after each played hand',
-            'Earn {C:money}+1{} at end of round',
-            '{C:inactive}(Currently {C:chips}+#1#{} {C:inactive}Chips',
-            '{C:inactive}and {C:mult}+#2#{} {C:inactive}Mult)'
+            '{C:chips}+#1#{} Chips and {C:mult}+#2#{} Mult',
+            'Loses {C:chips}5{} Chips and {C:mult}1{} Mult',
+            'after each played hand'
         }
     },
-    rarity = 2,
-    cost = 5,
+    rarity = 1,
+    cost = 6,
 
     loc_vars = function(self, info_queue, card)
         return {
@@ -37,37 +37,50 @@ SMODS.Joker({
         }
     end,
 
-
     calculate = function(self, card, context)
+        local extra = card.ability.extra
 
-        -- Apply accumulated bonuses during scoring
+        -- Apply current bonuses during scoring
         if context.joker_main then
             return {
-                chips = card.ability.extra.chips,
-                mult = card.ability.extra.mult
+                chips = extra.chips,
+                mult = extra.mult
             }
         end
 
-        -- Grow after each played hand
-        if context.after and not context.blueprint then
-            card.ability.extra.chips =
-                card.ability.extra.chips + card.ability.extra.chip_mod
-
-            card.ability.extra.mult =
-                card.ability.extra.mult + card.ability.extra.mult_mod
-
-            return {
-                message = 'Upgraded!',  
-            }
-        end
-        -- Earn $1 at the end of the round
-        if context.end_of_round
+        -- Deplete after each played hand
+        if context.after
             and context.main_eval
-            and not context.blueprint then
+            and not context.blueprint
+            and not extra.consumed then
+
+            extra.chips = math.max(0, extra.chips - extra.chip_mod)
+            extra.mult = math.max(0, extra.mult - extra.mult_mod)
+
+            -- Remove Vitamins when both stats reach zero
+            if extra.chips <= 0 and extra.mult <= 0 then
+                extra.consumed = true
+
+                G.E_MANAGER:add_event(Event({
+                    trigger = 'after',
+                    delay = 0.3,
+                    func = function()
+                        SMODS.destroy_cards(card, {
+                            bypass_eternal = true
+                        })
+                        return true
+                    end
+                }))
+
+                return {
+                    message = 'Consumed!',
+                    colour = G.C.RED
+                }
+            end
 
             return {
-                dollars = 1,
-                colour = G.C.MONEY
+                message = 'Taken!',
+                colour = G.C.MULT
             }
         end
     end
