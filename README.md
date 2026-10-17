@@ -28,22 +28,13 @@ Use versions compatible with your installed Balatro version and follow the offic
 3. Place the mod folder in `%AppData%/Balatro/Mods/`.
 4. Launch Balatro and check the Mods menu to confirm it loaded.
 
-## Configuration
-
-Configuration options will be documented here as they are added.
-
 ## Compatibility
 
 Compatibility with other mods has not yet been tested. Please report any issues with details about your Balatro version, Steamodded version, and other enabled mods.
 
-## Development Status
-
-**Early development — version 0.0.1**
-
-This mod is being built as a personal project. Content, balance, and features may change as development progresses.
-
 ## Credits
 
 Created by **Aubrey**.
+Joker arts by **@CostlessBea**.
 
 Thanks to the Balatro and Steamodded modding communities for their tools and documentation.
