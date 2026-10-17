@@ -1,0 +1,12 @@
+# VS Code: ignore personal workspace files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
