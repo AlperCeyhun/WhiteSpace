@@ -1,4 +1,12 @@
 -- Aubrey's White Space: Attlases
+
+SMODS.Atlas({
+    key = 'vitamins',
+    path = 'vitamins_placeholder.png',
+    px = 71,
+    py = 95
+})
+
 SMODS.Atlas({
     key = 'placeholders',
     path = 'placeholders.png',
