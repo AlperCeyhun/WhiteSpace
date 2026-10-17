@@ -9,7 +9,7 @@ SMODS.Atlas({
 
 SMODS.Atlas({
     key = 'caffeine',
-    path = 'caffeine_placeholder.png',
+    path = 'caffeine.png',
     px = 71,
     py = 95
 })
