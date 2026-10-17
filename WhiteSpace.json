@@ -1,6 +1,6 @@
 {
-    "id":"AubreysWhiteSpace",
-    "name":"Aubrey's White Space",
+    "id":"WhiteSpace",
+    "name":"White Space",
     "author": ["Aubrey"],
     "description": "My first mod filled with random stuff I'm into",
     "prefix": "aws",
