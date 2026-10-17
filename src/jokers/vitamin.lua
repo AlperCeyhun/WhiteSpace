@@ -2,7 +2,7 @@ SMODS.Joker({
     key = 'vitamin',
     atlas = 'placeholders',
     pos = {
-        x = 0,
+        x = 1,
         y = 0
     },
 
@@ -20,12 +20,13 @@ SMODS.Joker({
         text = {
             'Gains {C:chips}+5{} Chips and',
             '{C:mult}+1{} Mult after each played hand',
+            'Earn {C:money}+1{} at end of round',
             '{C:inactive}(Currently {C:chips}+#1#{} {C:inactive}Chips',
             '{C:inactive}and {C:mult}+#2#{} {C:inactive}Mult)'
         }
     },
     rarity = 2,
-    cost = 4,
+    cost = 5,
 
     loc_vars = function(self, info_queue, card)
         return {
@@ -36,9 +37,10 @@ SMODS.Joker({
         }
     end,
 
+
     calculate = function(self, card, context)
 
-        -- Apply the accumulated bonuses during scoring
+        -- Apply accumulated bonuses during scoring
         if context.joker_main then
             return {
                 chips = card.ability.extra.chips,
@@ -55,7 +57,17 @@ SMODS.Joker({
                 card.ability.extra.mult + card.ability.extra.mult_mod
 
             return {
-                message = 'Upgraded!'
+                message = 'Upgraded!',  
+            }
+        end
+        -- Earn $1 at the end of the round
+        if context.end_of_round
+            and context.main_eval
+            and not context.blueprint then
+
+            return {
+                dollars = 1,
+                colour = G.C.MONEY
             }
         end
     end
