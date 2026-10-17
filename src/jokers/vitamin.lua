@@ -10,7 +10,7 @@ SMODS.Joker({
         extra = {
             chips = 0,
             mult = 0,
-            chip_mod = 10,
+            chip_mod = 5,
             mult_mod = 1
         }
     },
@@ -18,14 +18,13 @@ SMODS.Joker({
     loc_txt = {
         name = 'Vitamin',
         text = {
-            'Gains {C:chips}+10{} Chips and',
+            'Gains {C:chips}+5{} Chips and',
             '{C:mult}+1{} Mult after each played hand',
-            'Currently {C:chips}+#1#{} Chips',
-            'and {C:mult}+#2#{} Mult'
+            '{C:inactive}(Currently {C:chips}+#1#{} {C:inactive}Chips',
+            '{C:inactive}and {C:mult}+#2#{} {C:inactive}Mult)'
         }
     },
-
-    rarity = 1,
+    rarity = 2,
     cost = 4,
 
     loc_vars = function(self, info_queue, card)
@@ -56,8 +55,7 @@ SMODS.Joker({
                 card.ability.extra.mult + card.ability.extra.mult_mod
 
             return {
-                message = 'Upgraded!',
-                colour = G.C.MULT
+                message = 'Upgraded!'
             }
         end
     end
