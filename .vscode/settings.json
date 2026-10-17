@@ -7,6 +7,7 @@
         "Blind",
         "ease_dollars",
         "add_round_eval_row",
-        "localize"
+        "localize",
+        "Event"
     ]
 }
