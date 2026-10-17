@@ -34,7 +34,7 @@ Compatibility with other mods has not yet been tested. Please report any issues 
 
 ## Credits
 
-Created by **Aubrey**.
-Joker arts by **@CostlessBea**.
+- Created by **Aubrey**.
+- Joker arts by **@CostlessBea**.
 
 Thanks to the Balatro and Steamodded modding communities for their tools and documentation.
