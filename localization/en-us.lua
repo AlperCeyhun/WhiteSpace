@@ -23,6 +23,14 @@ return {
                     'destroy this Joker to create',
                     'a random {C:red}Rare{} Joker and earn {C:money}$25{}'
                 }
+            },
+            j_aws_aubrey = {
+                name = 'Aubrey',
+                text = {
+                    'Gain {X:mult,C:white}X0.5{} Mult',
+                    'for every {C:money}$5{} below {C:money}$25{} you have',
+                    '{C:inactive}Currently {X:mult,C:white}X#1#{} {C:inactive}Mult'
+                }
             }
         }
     }
