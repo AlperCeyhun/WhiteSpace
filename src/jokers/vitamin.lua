@@ -9,8 +9,8 @@ SMODS.Joker({
 
     config = {
         extra = {
-            chips = 50,
-            mult = 10,
+            chips = 60,
+            mult = 12,
             chip_mod = 5,
             mult_mod = 1,
             consumed = false
@@ -21,8 +21,8 @@ SMODS.Joker({
         name = 'Vitamins',
         text = {
             '{C:chips}+#1#{} Chips and {C:mult}+#2#{} Mult',
-            'Loses {C:chips}5{} Chips and {C:mult}1{} Mult',
-            'after each played hand'
+            '{C:chips}-5{} Chips and {C:mult}-1{} Mult',
+            'each played hand'
         }
     },
     rarity = 1,
