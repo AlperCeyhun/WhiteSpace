@@ -13,7 +13,7 @@ return {
                 name = 'Caffeine',
                 text = {
                     '{C:green}#1# in #2#{} chance to',
-                    'retrigger each played card'
+                    'retrigger each played {C:spades}Spade{} card'
                 }
             },
             j_aws_hopeker = {
@@ -28,8 +28,16 @@ return {
                 name = 'Aubrey',
                 text = {
                     'Gain {X:mult,C:white}X0.5{} Mult',
-                    'for every {C:money}$5{} below {C:money}$25{} you have',
+                    'for every {C:money}$5{} below {C:money}$25{}',
                     '{C:inactive}Currently {X:mult,C:white}X#1#{} {C:inactive}Mult'
+                }
+            },
+            j_aws_audience = {
+                name = 'Audience',
+                text = {
+                    'Gain {C:attention}+1{} Hand Size for',
+                    'every {C:attention}4 Kings{} in deck',
+                    '{C:inactive}Currently{} {C:attention}+#1#{} {C:inactive}Hand Size{}'
                 }
             }
         }
