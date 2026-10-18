@@ -8,7 +8,7 @@ SMODS.Joker({
 
     config = {
         extra = {
-            odds = 2
+            odds = 3
         }
     },
 
@@ -16,7 +16,7 @@ SMODS.Joker({
         name = 'Caffeine',
         text = {
             '{C:green}#1# in #2#{} chance to',
-            'retrigger each played {C:spades}Spade{} card'
+            'retrigger each played card'
         }
     },
 
@@ -39,9 +39,7 @@ SMODS.Joker({
     calculate = function(self, card, context)
         if context.repetition
             and context.cardarea == G.play
-            and not context.retrigger_joker
-            and context.other_card
-            and context.other_card:is_suit('Spades') then
+            and not context.retrigger_joker then
 
             if pseudorandom('aws_caffeine') < G.GAME.probabilities.normal / card.ability.extra.odds then
                 return {

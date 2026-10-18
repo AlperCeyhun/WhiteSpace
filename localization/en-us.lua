@@ -13,15 +13,16 @@ return {
                 name = 'Caffeine',
                 text = {
                     '{C:green}#1# in #2#{} chance to',
-                    'retrigger each played {C:spades}Spade{} card'
+                    'retrigger each played card'
                 }
             },
             j_aws_hopeker = {
                 name = 'Hopeker',
                 text = {
-                    'On defeat, prevent loss and',
-                    'destroy this Joker to create',
-                    'a random {C:red}Rare{} Joker and earn {C:money}$25{}'
+                    'When defeated, prevent loss',
+                    'and give the Joker to the right',
+                    'a random {C:dark_edition}Edition{}',
+                    '{C:inactive}(Inhale hopium)'
                 }
             },
             j_aws_aubrey = {
