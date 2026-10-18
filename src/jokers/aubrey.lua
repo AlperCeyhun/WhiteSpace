@@ -6,14 +6,14 @@ SMODS.Joker({
         y = 0
     },
 
-    rarity = 1,
-    cost = 4,
+    rarity = 3,
+    cost = 6,
 
     loc_txt = {
         name = 'Aubrey',
         text = {
             'Gain {X:mult,C:white}X0.5{} Mult',
-            'for every {C:money}$5{} below {C:money}$25{} you have',
+            'for every {C:money}$5{} below {C:money}$25{}',
             '{C:inactive}Currently {X:mult,C:white}X#1#{} {C:inactive}Mult'
         }
     },
