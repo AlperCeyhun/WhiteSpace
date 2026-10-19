@@ -49,6 +49,13 @@ return {
                     'in your full deck',
                     '{C:inactive}(Currently {C:chips}+#1#{} {C:inactive}Chips)'
                 }
+            },
+            j_aws_mari = {
+                name = 'Mari',
+                text = {
+                    'Create a random {C:tarot}Tarot{} card',
+                    'when a playing card is destroyed'
+                }
             }
         }
     }
