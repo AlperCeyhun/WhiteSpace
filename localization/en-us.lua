@@ -64,6 +64,14 @@ return {
                     'destroy a random',
                     '{C:attention}non-scoring card{}'
                 }
+            },
+            j_aws_blackjack = {
+                name = 'Blackjack',
+                text = {
+                    'Earn {C:money}$5{} if first hand',
+                    'sum totals {C:attention}21{}',
+                    '{C:inactive}Including non-scoring cards{}'
+                }
             }
         }
     }
