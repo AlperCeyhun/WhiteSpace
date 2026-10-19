@@ -56,6 +56,14 @@ return {
                     'Create a random {C:tarot}Tarot{} card',
                     'when a playing card is destroyed'
                 }
+            },
+            j_aws_bocchi = {
+                name = 'Bocchi',
+                text = {
+                    'At {C:attention}first played hand{} each round,',
+                    'destroy a random',
+                    '{C:attention}non-scoring card{}'
+                }
             }
         }
     }
