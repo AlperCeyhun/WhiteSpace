@@ -15,7 +15,7 @@ SMODS.Joker({
             'When defeated, prevent loss',
             'and give the Joker to the right',
             'a random {C:dark_edition}Edition{}',
-            '{C:inactive}(Inhale hopium)'
+            '{C:inactive}(Inject hopium)'
         }
     },
 
