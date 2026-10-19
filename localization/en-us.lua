@@ -72,6 +72,14 @@ return {
                     'sum totals {C:attention}21{}',
                     '{C:inactive}Including non-scoring cards{}'
                 }
+            },
+            j_aws_forgotten_man = {
+                name = 'Forgotten Man',
+                text = {
+                    'Create an {C:attention}Egg{} when purchased',
+                    'and at the start of each {C:attention}Ante{}',
+                    '{C:inactive}There is not a man there..{}'
+                }
             }
         }
     }

@@ -27,3 +27,10 @@ SMODS.Atlas({
     px = 71,
     py = 95
 })
+
+SMODS.Atlas({
+    key = 'forgotten_man',
+    path = 'forgotten_man.png',
+    px = 71,
+    py = 95
+})
