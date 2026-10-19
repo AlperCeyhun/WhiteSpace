@@ -22,7 +22,7 @@ return {
                     'When defeated, prevent loss',
                     'and give the Joker to the right',
                     'a random {C:dark_edition}Edition{}',
-                    '{C:inactive}(Inhale hopium)'
+                    '{C:inactive}(Inject hopium)'
                 }
             },
             j_aws_aubrey = {
@@ -39,6 +39,15 @@ return {
                     'Gain {C:attention}+1{} Hand Size for',
                     'every {C:attention}4 Kings{} in deck',
                     '{C:inactive}Currently{} {C:attention}+#1#{} {C:inactive}Hand Size{}'
+                }
+            },
+            j_aws_flood = {
+                name = 'Flood',
+                text = {
+                    '{C:chips}+20{} Chips for each',
+                    'card below {C:attention}#2#{}',
+                    'in your full deck',
+                    '{C:inactive}(Currently {C:chips}+#1#{} {C:inactive}Chips)'
                 }
             }
         }
