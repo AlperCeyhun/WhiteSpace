@@ -15,7 +15,7 @@ Use versions compatible with your installed Balatro version and follow the offic
 ## Installation
 
 1. Install Lovely and Steamodded.
-2. Download the latest release of Aubrey's White Space from the Code → Download ZIP menu.
+2. Download the latest release of Aubrey's White Space from [here](https://github.com/AlperCeyhun/WhiteSpace/archive/refs/heads/main.zip).
 3. Extract the mod folder into %AppData%/Balatro/Mods/.
 4. Launch Balatro and check the Mods menu to verify the mod is loaded.
 
