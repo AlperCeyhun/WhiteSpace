@@ -1,5 +1,5 @@
 SMODS.Joker({
-    key = 'aubrey',
+    key = 'delinquent',
     atlas = 'aws_placeholders',
     pos = {
         x = 2,
@@ -10,7 +10,7 @@ SMODS.Joker({
     cost = 6,
 
     loc_txt = {
-        name = 'Aubrey',
+        name = 'Delinquent',
         text = {
             'Gain {X:mult,C:white}X0.5{} Mult',
             'for every {C:money}$5{} below {C:money}$25{}',

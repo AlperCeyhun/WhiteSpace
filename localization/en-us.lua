@@ -25,8 +25,8 @@ return {
                     '{C:inactive}(Inject hopium)'
                 }
             },
-            j_aws_aubrey = {
-                name = 'Aubrey',
+            j_aws_delinquent = {
+                name = 'Delinquent',
                 text = {
                     'Gain {X:mult,C:white}X0.5{} Mult',
                     'for every {C:money}$5{} below {C:money}$25{}',
