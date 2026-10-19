@@ -11,6 +11,7 @@
         "Event",
         "pseudorandom",
         "pseudoseed",
-        "pseudorandom_element"
+        "pseudorandom_element",
+        "create_card"
     ]
 }
