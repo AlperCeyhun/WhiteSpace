@@ -1,5 +1,5 @@
 SMODS.Joker({
-    key = 'mari',
+    key = 'picnic_basket',
     atlas = 'aws_placeholders',
     pos = { x = 0, y = 0 },
 
@@ -7,7 +7,7 @@ SMODS.Joker({
     cost = 4,
 
     loc_txt = {
-        name = 'Mari',
+        name = 'Picnic Basket',
         text = {
             'Create a random {C:tarot}Tarot{} card',
             'when a playing card is destroyed'
@@ -47,7 +47,7 @@ SMODS.Joker({
                             nil,
                             nil,
                             nil,
-                            'aws_mari'
+                            'aws_picnic_basket'
                         )
 
                         tarot:add_to_deck()

@@ -50,17 +50,17 @@ return {
                     '{C:inactive}(Currently {C:chips}+#1#{} {C:inactive}Chips)'
                 }
             },
-            j_aws_mari = {
-                name = 'Mari',
+            j_aws_picnic_basket = {
+                name = 'Picnic Basket',
                 text = {
                     'Create a random {C:tarot}Tarot{} card',
                     'when a playing card is destroyed'
                 }
             },
-            j_aws_bocchi = {
-                name = 'Bocchi',
+            j_aws_introvert = {
+                name = 'Introvert',
                 text = {
-                    'At {C:attention}first played hand{} each round,',
+                    'At {C:attention}first played hand{} each round',
                     'destroy a random',
                     '{C:attention}non-scoring card{}'
                 }

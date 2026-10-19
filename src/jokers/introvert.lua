@@ -1,5 +1,5 @@
 SMODS.Joker({
-    key = 'bocchi',
+    key = 'introvert',
     atlas = 'aws_placeholders',
     pos = { x = 0, y = 0 },
 
@@ -7,7 +7,7 @@ SMODS.Joker({
     cost = 5,
 
     loc_txt = {
-        name = 'Bocchi',
+        name = 'Introvert',
         text = {
             'At {C:attention}first played hand{} each round,',
             'destroy a random',
@@ -49,7 +49,7 @@ SMODS.Joker({
             if #unscored > 0 then
                 local target = pseudorandom_element(
                     unscored,
-                    pseudoseed('aws_bocchi')
+                    pseudoseed('aws_introvert')
                 )
 
                 SMODS.destroy_cards(target, {
