@@ -20,7 +20,7 @@ SMODS.Joker({
 
     loc_vars = function(self, info_queue, card)
         local dollars = G.GAME and G.GAME.dollars or 0
-        local steps = math.ceil(math.max(0, 25 - dollars) / 5)
+        local steps = math.max(0, math.floor((25 - dollars) / 5))
         local x_mult = 1 + steps * 0.5
 
         return {
@@ -31,7 +31,7 @@ SMODS.Joker({
     calculate = function(self, card, context)
         if context.joker_main then
             local dollars = G.GAME.dollars or 0
-            local steps = math.ceil(math.max(0, 25 - dollars) / 5)
+            local steps = math.max(0, math.floor((25 - dollars) / 5))
             local x_mult = 1 + steps * 0.5
 
             if x_mult > 1 then
