@@ -1,9 +1,10 @@
 SMODS.Joker({
     key = 'delinquent',
-    atlas = 'aws_placeholders',
-    pos = {
-        x = 2,
-        y = 0
+    atlas = "aws_delinquent_animation",
+    pos = { x = 0, y = 0 },
+    sprite_args = {
+        frames = 4,
+        fps = 4
     },
 
     rarity = 3,

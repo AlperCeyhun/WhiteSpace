@@ -34,3 +34,13 @@ SMODS.Atlas({
     px = 71,
     py = 95
 })
+
+SMODS.Atlas({
+    key = "delinquent_animation",
+    path = "delinquent_animation.png",
+    px = 71,
+    py = 95,
+    atlas_table = "ANIMATION_ATLAS",
+    frames = 4,
+    fps = 4
+})
