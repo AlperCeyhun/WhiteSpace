@@ -11,8 +11,8 @@ SMODS.Joker({
         extra = {
             chips = 60,
             mult = 12,
-            chip_mod = 5,
-            mult_mod = 1,
+            chip_mod = 10,
+            mult_mod = 2,
             consumed = false
         }
     },
