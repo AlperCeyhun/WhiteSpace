@@ -6,6 +6,9 @@ SMODS.Joker({
         y = 0
     },
 
+    rarity = 2,
+    cost = 5,
+
     config = {
         extra = {
             odds = 3
@@ -33,8 +36,7 @@ SMODS.Joker({
         }
     end,
 
-    rarity = 2,
-    cost = 5,
+
 
     calculate = function(self, card, context)
         if context.repetition

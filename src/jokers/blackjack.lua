@@ -1,7 +1,7 @@
 SMODS.Joker({
     key = 'blackjack',
     atlas = 'aws_placeholders',
-    pos = { x = 1, y = 0 },
+    pos = { x = 0, y = 0 },
 
     rarity = 1,
     cost = 5,
