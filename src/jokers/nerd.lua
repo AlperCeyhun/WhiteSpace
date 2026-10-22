@@ -1,10 +1,12 @@
 
 SMODS.Joker({
     key = "nerd",
-    rarity = 1,
-    cost = 5,
     atlas = "placeholders",
     pos = { x = 0, y = 0 },
+    
+    rarity = 1,
+    cost = 5,
+
     config = {
         extra = {
             odds = 2

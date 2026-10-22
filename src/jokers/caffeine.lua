@@ -1,10 +1,7 @@
 SMODS.Joker({
     key = 'caffeine',
     atlas = 'aws_caffeine',
-    pos = {
-        x = 0,
-        y = 0
-    },
+    pos = { x = 0, y = 0},
 
     rarity = 2,
     cost = 5,
@@ -35,8 +32,6 @@ SMODS.Joker({
             }
         }
     end,
-
-
 
     calculate = function(self, card, context)
         if context.repetition

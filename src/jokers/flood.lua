@@ -3,6 +3,9 @@ SMODS.Joker({
     atlas = 'aws_placeholders',
     pos = { x = 1, y = 0 },
 
+    rarity = 2,
+    cost = 5,
+
     config = {
         extra = {
             chip_mod = 20
@@ -31,9 +34,6 @@ SMODS.Joker({
             }
         }
     end,
-
-    rarity = 2,
-    cost = 5,
 
     calculate = function(self, card, context)
         if context.joker_main then

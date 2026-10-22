@@ -19,6 +19,8 @@ SMODS.Joker({
         }
     },
 
+    
+
     loc_vars = function(self, info_queue, card)
         local dollars = G.GAME and G.GAME.dollars or 0
         local steps = math.max(0, math.floor((25 - dollars) / 5))

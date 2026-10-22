@@ -36,14 +36,14 @@ SMODS.Joker({
     atlas = 'aws_placeholders',
     pos = { x = 2, y = 0 },
 
+    rarity = 3,
+    cost = 6,
+    
     config = {
         extra = {
             applied_bonus = 0
         }
     },
-
-    rarity = 3,
-    cost = 6,
 
     loc_txt = {
         name = 'Audience',

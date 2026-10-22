@@ -1,13 +1,8 @@
-
--- Aubrey's White Space
--- Monochrome main menu background
-
 local original_main_menu = Game.main_menu
 
 function Game:main_menu(change_context)
     -- Create the normal Balatro main menu first
     original_main_menu(self, change_context)
-
     -- Apply the monochrome splash shader
     if G.SPLASH_BACK then
         G.SPLASH_BACK:define_draw_steps({

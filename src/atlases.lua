@@ -1,5 +1,3 @@
--- Aubrey's White Space: Atlases
-
 SMODS.Atlas({
     key = 'placeholders',
     path = 'placeholders.png',

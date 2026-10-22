@@ -3,6 +3,9 @@ SMODS.Joker({
     atlas = 'aws_hopeker',
     pos = { x = 0, y = 0 },
 
+    rarity = 3,
+    cost = 6,
+
     config = {
         extra = {
             used = false
@@ -18,10 +21,6 @@ SMODS.Joker({
             '{C:inactive}(Inject hopium)'
         }
     },
-
-    rarity = 3,
-    cost = 6,
-    blueprint_compat = false,
 
     calculate = function(self, card, context)
         if context.game_over
