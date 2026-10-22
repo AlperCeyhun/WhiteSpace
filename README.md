@@ -2,7 +2,7 @@
 
 Aubrey's White Space is a Balatro content mod featuring custom Jokers, consumables, and other ideas inspired by things I'm into.
 
-This project is a work in progress. More content and features will be added over time.
+Currently adds 4 rare, 2 uncommon and 5 common jokers.
 
 ## Requirements
 
@@ -21,7 +21,8 @@ Use versions compatible with your installed Balatro version and follow the offic
 
 ## Credits
 
-- Created by **Aubrey**.
-- Joker arts by **@CostlessBea**.
+- **Aubrey** Creator and developer.
+- **@CostlessBea** Forgotten man and Hopeker joker arts.
+- **@faeryth** Main menu theme.
 
 Thanks to the Balatro and Steamodded modding communities for their tools and documentation.
