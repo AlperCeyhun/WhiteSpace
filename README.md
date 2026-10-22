@@ -21,7 +21,7 @@ Use versions compatible with your installed Balatro version and follow the offic
 
 ## Credits
 
-- **@Aubreyzip** Creator and developer.
+- **@aubreyzip** Creator and developer.
 - **@CostlessBea** Forgotten man and Hopeker joker arts.
 - **@faeryth** Main menu theme.
 
