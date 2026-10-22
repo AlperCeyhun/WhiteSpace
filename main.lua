@@ -12,3 +12,9 @@ end
 
 -- Aubrey's White Space: monochrome main menu
 assert(SMODS.load_file("backgrounds/monochrome.lua"))()
+
+SMODS.current_mod.menu_cards = function()
+    return {
+        { key = "j_aws_delinquent" }
+    }
+end
