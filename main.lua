@@ -1,3 +1,6 @@
+-- Aubrey's White Space: sounds
+assert(SMODS.load_file("src/sounds.lua"))()
+
 -- Aubrey's White Space: Atlases
 assert(SMODS.load_file("src/atlases.lua"))()
 
